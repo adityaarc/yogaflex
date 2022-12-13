@@ -1,0 +1,2 @@
+the Gradle file is actually .gradle all the contents in gradle is part of .gradle except wrapper
+Hence after code dowload kindlily rename the gradle folder as .gradle and make a new folder named gradle and paste wrapper inside it
