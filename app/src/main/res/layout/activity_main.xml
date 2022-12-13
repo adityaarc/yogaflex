@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/club_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_club"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        />
+
+    <RelativeLayout
+
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/club_logo"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="visible"
+        >
+
+        <EditText
+            android:id="@+id/email_login_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textEmailAddress"
+            android:hint="Enter your Email" />
+
+        <EditText
+            android:id="@+id/pass_login_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/email_login_et"
+            android:layout_marginTop="20dp"
+            android:hint="Enter your password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/login_Btn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/pass_login_et"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="login"
+            android:onClick="login_fn"
+            />
+        <TextView
+            android:layout_below="@+id/login_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#D5D0D0"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/goto_register"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_Btn"
+            android:layout_centerHorizontal="true"
+            android:background="#0DF316"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Create new account"
+            android:layout_marginTop="100dp"
+            android:textColor="#fff"
+            android:onClick="goto_register"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/club_logo"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp">
+
+        <EditText
+            android:id="@+id/email_create_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter your Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/pass_create_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/email_create_et"
+            android:layout_marginTop="20dp"
+            android:hint="Enter your password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/name_create_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/pass_create_et"
+            android:layout_marginTop="20dp"
+            android:hint="Enter your Name"
+            />
+        <EditText
+            android:id="@+id/age_create_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/name_create_et"
+            android:layout_marginTop="20dp"
+            android:hint="Enter your age"
+            />
+
+        <Button
+            android:id="@+id/create_Btn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/age_create_et"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:onClick="create_acc_btn"
+            android:text="create" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/create_Btn"
+            android:layout_marginTop="20dp"
+            android:background="#D5D0D0"
+            />
+
+
+        <TextView
+            android:id="@+id/goto_create"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_Btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="#0DF316"
+            android:gravity="center"
+            android:onClick="goto_login"
+            android:padding="10dp"
+            android:text="login"
+            android:textColor="#fff"
+
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
