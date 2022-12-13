@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "407675905408",
+    "firebase_url": "https://yogaflex-b7554-default-rtdb.firebaseio.com",
+    "project_id": "yogaflex-b7554",
+    "storage_bucket": "yogaflex-b7554.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407675905408:android:c7d8e00763b5925acb4d65",
+        "android_client_info": {
+          "package_name": "com.example.yogaflex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407675905408-ifh5aad431f5s1jfhu70mf53tih590jh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNqaS0tLN8GDgNqgM3n4aKs-RKYc96NM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407675905408-ifh5aad431f5s1jfhu70mf53tih590jh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
